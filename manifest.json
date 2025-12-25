@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "EBS Instagram Aktarıcı",
+  "version": "1.0",
+  "description": "Bu Eklenti ile haber sitelerinizdeki haberleri x,metada paylaşabilirsiniz",
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": [
+    "https://www.instagram.com/*",
+    "https://example.com.tr/*",
+    "https://www.facebook.com/*"
+  ],
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  }
+}
